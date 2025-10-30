@@ -1,16 +1,13 @@
-
 import 'package:flutter/material.dart';
-
 void main() {
   runApp(const MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.white,
         body: SafeArea(
@@ -19,7 +16,6 @@ class MyApp extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Header
                 Row(
                   children: [
                     CircleAvatar(
@@ -51,7 +47,6 @@ class MyApp extends StatelessWidget {
 
                 SizedBox(height: 24),
 
-                // Progress Box
                 Container(
                   width: double.infinity,
                   padding: EdgeInsets.all(16),
@@ -100,7 +95,6 @@ class MyApp extends StatelessWidget {
 
                 SizedBox(height: 20),
 
-                // In Progress
                 Row(
                   children: [
                     Text(
@@ -159,8 +153,6 @@ class MyApp extends StatelessWidget {
                 ),
 
                 SizedBox(height: 20),
-
-                // Task Groups Title
                 Text(
                   "Task Groups",
                   style: TextStyle(
@@ -172,7 +164,6 @@ class MyApp extends StatelessWidget {
 
                 SizedBox(height: 12),
 
-                // Personal Task
                 Container(
                   padding: EdgeInsets.symmetric(vertical: 14, horizontal: 16),
                   decoration: BoxDecoration(
@@ -215,7 +206,6 @@ class MyApp extends StatelessWidget {
 
                 SizedBox(height: 12),
 
-                // Home Task
                 Container(
                   padding: EdgeInsets.symmetric(vertical: 14, horizontal: 16),
                   decoration: BoxDecoration(
@@ -258,7 +248,6 @@ class MyApp extends StatelessWidget {
 
                 SizedBox(height: 12),
 
-                // Work Task
                 Container(
                   padding: EdgeInsets.symmetric(vertical: 14, horizontal: 16),
                   decoration: BoxDecoration(
@@ -301,7 +290,6 @@ class MyApp extends StatelessWidget {
 
                 Spacer(),
 
-                // Floating Button
                 Align(
                   alignment: Alignment.bottomRight,
                   child: FloatingActionButton(
